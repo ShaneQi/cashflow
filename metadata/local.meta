@@ -1,0 +1,57 @@
+[app/ui]
+version = 8.0.3
+modtime = 1587400090.161142000
+
+[app/launcher]
+version = 8.0.3
+modtime = 1587400090.161957000
+
+[views/a_dashboard]
+owner = admin
+version = 8.0.3
+modtime = 1587404940.816320000
+
+[views/b_dashboard]
+owner = admin
+version = 8.0.3
+modtime = 1587405229.440510000
+
+[savedsearches/OUT%20by%20Cycle]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587401385.158318000
+
+[props/cashflow-csv]
+owner = admin
+version = 8.0.3
+modtime = 1587400738.675202000
+
+[savedsearches/OUT%20by%20Category]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587401372.929310000
+
+[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587404757.103421000
+
+[savedsearches/OUT%20Transactions%20per%20%5Bcycle%5D]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587404768.512297000
+
+[savedsearches/OUT%20by%20Category%20per%20%5Bcycle%5D]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587405062.693725000
