@@ -9,7 +9,7 @@ modtime = 1587400090.161957000
 [views/a_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1587404940.816320000
+modtime = 1587530543.388887000
 
 [views/b_dashboard]
 owner = admin
@@ -42,16 +42,28 @@ owner = admin
 version = 8.0.3
 modtime = 1587404757.103421000
 
-[savedsearches/OUT%20Transactions%20per%20%5Bcycle%5D]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587404768.512297000
-
 [savedsearches/OUT%20by%20Category%20per%20%5Bcycle%5D]
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 8.0.3
 modtime = 1587405062.693725000
+
+[savedsearches/IN%20%26%20OUT%20by%20Cycle]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587528792.830276000
+
+[savedsearches/IN%20by%20Category%20per%20%5Bcycle%5D]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587528986.395427000
+
+[savedsearches/IN%20%26%20OUT%20Transactions%20per%20%5Bcycle%5D%20per%20%5Bcategory%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1587530229.323543000
