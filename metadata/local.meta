@@ -14,7 +14,7 @@ modtime = 1587530543.388887000
 [views/b_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1588711340.292310000
+modtime = 1588714936.645020000
 
 [savedsearches/OUT%20by%20Cycle]
 access = read : [ * ], write : [ * ]
@@ -66,12 +66,15 @@ modtime = 1587528986.395427000
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1588711429.309654000
+modtime = 1587530229.323543000
 
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1588651924.245214000
+modtime = 1588713699.810628000
 
-[inputs/monitor%3A%2F%2F%2Fdata%2Fcash-flow]
+[savedsearches/Non-Bills%20Non-Groceries%20Non-Food-Drink%20by%20Cycle%20Clone]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
 version = 8.0.3
-modtime = 1588652005.990400000
+modtime = 1588714887.019720000
