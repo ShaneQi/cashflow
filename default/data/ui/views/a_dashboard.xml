@@ -1,9 +1,10 @@
 <dashboard theme="dark">
-  <label>A Dashboard</label>
   <init>
-    <eval token="cycle">strftime(now() - 2592000,"%y%m")</eval>
+    <eval token="cycle">strftime(now() - 3600 * 24 * 30, "%y%m")</eval>
     <set token="category">ALL</set>
+    <set token="inOut">ALL</set>
   </init>
+  <label>A Dashboard</label>
   <row>
     <panel>
       <chart>
@@ -13,6 +14,7 @@
         <drilldown>
           <set token="cycle">$click.value$</set>
           <set token="category">ALL</set>
+          <set token="inOut">ALL</set>
         </drilldown>
       </chart>
     </panel>
@@ -22,7 +24,7 @@
       <chart>
         <title>OUT Categories of $cycle$</title>
         <search>
-          <query>| savedsearch "OUT by Category per [cycle]" cycle=$cycle$</query>
+          <query>| savedsearch "by Category per [cycle] per [inOut]" inOut=OUT cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -60,6 +62,7 @@
         <option name="trellis.size">medium</option>
         <drilldown>
           <set token="category">$click.value$</set>
+          <set token="inOut">OUT</set>
         </drilldown>
       </chart>
     </panel>
@@ -67,7 +70,7 @@
       <table>
         <title>OUT Categories of $cycle$</title>
         <search>
-          <query>| savedsearch "OUT by Category per [cycle]" cycle=$cycle$</query>
+          <query>| savedsearch "by Category per [cycle] per [inOut]" inOut=OUT cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -75,6 +78,7 @@
         <option name="drilldown">row</option>
         <drilldown>
           <set token="category">$click.value$</set>
+          <set token="inOut">OUT</set>
         </drilldown>
       </table>
     </panel>
@@ -82,7 +86,7 @@
       <chart>
         <title>IN Categories of $cycle$</title>
         <search>
-          <query>| savedsearch "IN by Category per [cycle]" cycle=$cycle$</query>
+          <query>| savedsearch "by Category per [cycle] per [inOut]" inOut=IN cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -120,6 +124,7 @@
         <option name="trellis.size">medium</option>
         <drilldown>
           <set token="category">$click.value$</set>
+          <set token="inOut">IN</set>
         </drilldown>
       </chart>
     </panel>
@@ -127,7 +132,7 @@
       <table>
         <title>IN Categories of $cycle$</title>
         <search>
-          <query>| savedsearch "IN by Category per [cycle]" cycle=$cycle$</query>
+          <query>| savedsearch "by Category per [cycle] per [inOut]" inOut=IN cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -135,6 +140,7 @@
         <option name="drilldown">row</option>
         <drilldown>
           <set token="category">$click.value$</set>
+          <set token="inOut">IN</set>
         </drilldown>
       </table>
     </panel>
@@ -142,9 +148,9 @@
   <row>
     <panel>
       <table>
-        <title>Transactions of $cycle$ &amp; $category$</title>
+        <title>Transactions of $cycle$ &amp; $category$ ($inOut$)</title>
         <search>
-          <query>| savedsearch "IN &amp; OUT Transactions per [cycle] per [category]" cycle=$cycle$ category="$category$"</query>
+          <query>| savedsearch "IN &amp; OUT Transactions per [cycle] per [category] per [inOut]" cycle=$cycle$ category="$category$" inOut=$inOut$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>

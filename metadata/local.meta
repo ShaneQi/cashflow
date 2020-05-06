@@ -9,19 +9,12 @@ modtime = 1587400090.161957000
 [views/a_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1587530543.388887000
+modtime = 1588794521.787188000
 
 [views/b_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1588714936.645020000
-
-[savedsearches/OUT%20by%20Cycle]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587401385.158318000
+modtime = 1588793354.995565000
 
 [props/cashflow-csv]
 owner = admin
@@ -40,14 +33,7 @@ access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1587404757.103421000
-
-[savedsearches/OUT%20by%20Category%20per%20%5Bcycle%5D]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587405062.693725000
+modtime = 1588792896.444305000
 
 [savedsearches/IN%20%26%20OUT%20by%20Cycle]
 export = none
@@ -55,26 +41,47 @@ owner = admin
 version = 8.0.3
 modtime = 1587528792.830276000
 
-[savedsearches/IN%20by%20Category%20per%20%5Bcycle%5D]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587528986.395427000
-
-[savedsearches/IN%20%26%20OUT%20Transactions%20per%20%5Bcycle%5D%20per%20%5Bcategory%5D]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587530229.323543000
-
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1588713699.810628000
+modtime = 1588717928.431741000
 
-[savedsearches/Non-Bills%20Non-Groceries%20Non-Food-Drink%20by%20Cycle%20Clone]
-access = read : [ * ], write : [ admin, power ]
+[views/c_dashboard]
+owner = admin
+version = 8.0.3
+modtime = 1588792139.941781000
+
+[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment]
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1588714887.019720000
+modtime = 1588778661.672504000
+
+[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment%20by%20Cycle]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1588778665.948794000
+
+[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment%20per%20%5Bcycle%5D%20by%20Category]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1588781380.961330000
+
+[savedsearches/OUT%20Inevitable%20by%20Cycle]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1588783487.870323000
+
+[savedsearches/IN%20%26%20OUT%20Transactions%20per%20%5Bcycle%5D%20per%20%5Bcategory%5D%20per%20%5BinOut%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1588793395.966702000
+
+[savedsearches/by%20Category%20per%20%5Bcycle%5D%20per%20%5BinOut%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1588794457.883297000
