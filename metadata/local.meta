@@ -50,24 +50,6 @@ owner = admin
 version = 8.0.3
 modtime = 1606381111.290299000
 
-[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1588778661.672504000
-
-[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment%20by%20Cycle]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1588778665.948794000
-
-[savedsearches/OUT%20Excluded%20Fixed%20and%20Investment%20per%20%5Bcycle%5D%20by%20Category]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1588781380.961330000
-
 [savedsearches/OUT%20Inevitable%20by%20Cycle]
 export = none
 owner = admin
