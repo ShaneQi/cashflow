@@ -14,7 +14,7 @@ modtime = 1588794521.787188000
 [views/b_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1588793354.995565000
+modtime = 1606369794.630158000
 
 [props/cashflow-csv]
 owner = admin
@@ -43,12 +43,12 @@ modtime = 1587528792.830276000
 
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1588717928.431741000
+modtime = 1605378389.289870000
 
 [views/c_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1588792139.941781000
+modtime = 1606370320.196020000
 
 [savedsearches/OUT%20Excluded%20Fixed%20and%20Investment]
 export = none
@@ -85,3 +85,15 @@ export = none
 owner = admin
 version = 8.0.3
 modtime = 1588794457.883297000
+
+[savedsearches/OUT%20by%20Category%20IN%20Last%2012%20Cycles]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1606369403.988126000
+
+[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D%20IN%20Last%2012%20Cycles]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1606369714.994753000
