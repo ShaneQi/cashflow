@@ -33,7 +33,7 @@ access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1588792896.444305000
+modtime = 1606377864.864223000
 
 [savedsearches/IN%20%26%20OUT%20by%20Cycle]
 export = none
@@ -43,12 +43,12 @@ modtime = 1587528792.830276000
 
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1605378389.289870000
+modtime = 1606373419.363246000
 
 [views/c_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1606370320.196020000
+modtime = 1606381111.290299000
 
 [savedsearches/OUT%20Excluded%20Fixed%20and%20Investment]
 export = none
@@ -97,3 +97,15 @@ export = none
 owner = admin
 version = 8.0.3
 modtime = 1606369714.994753000
+
+[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D%20IN%20This%20Year]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1606378765.686474000
+
+[savedsearches/OUT%20Total%20per%20%5Bcategory%5D%20IN%20This%20Year]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1606379518.699992000
