@@ -43,7 +43,7 @@ modtime = 1587528792.830276000
 
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1609016807.958498000
+modtime = 1622619206.949739000
 
 [views/c_dashboard]
 owner = admin
@@ -93,3 +93,8 @@ export = none
 owner = admin
 version = 8.0.3
 modtime = 1610226520.365715000
+
+[indexes/cashflow]
+owner = admin
+version = 8.0.3
+modtime = 1622620649.685895000
