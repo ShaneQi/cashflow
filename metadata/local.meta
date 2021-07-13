@@ -9,12 +9,12 @@ modtime = 1587400090.161957000
 [views/a_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1588794521.787188000
+modtime = 1626042984.620251000
 
 [views/b_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1606369794.630158000
+modtime = 1626146504.946535000
 
 [props/cashflow-csv]
 owner = admin
@@ -39,22 +39,22 @@ modtime = 1606377864.864223000
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1587528792.830276000
+modtime = 1625919984.706264000
 
 [app/install/install_source_checksum]
 version = 8.0.3
-modtime = 1622619206.949739000
+modtime = 1623647097.531970000
 
 [views/c_dashboard]
 owner = admin
 version = 8.0.3
-modtime = 1610226625.070315000
+modtime = 1626147259.737728000
 
 [savedsearches/OUT%20Inevitable%20by%20Cycle]
 export = none
 owner = admin
 version = 8.0.3
-modtime = 1588783487.870323000
+modtime = 1625920199.932854000
 
 [savedsearches/IN%20%26%20OUT%20Transactions%20per%20%5Bcycle%5D%20per%20%5Bcategory%5D%20per%20%5BinOut%5D]
 export = none
@@ -98,3 +98,68 @@ modtime = 1610226520.365715000
 owner = admin
 version = 8.0.3
 modtime = 1622620649.685895000
+
+[views/d_dashboard]
+owner = admin
+version = 8.0.3
+modtime = 1626144611.671677000
+
+[savedsearches/COL%20by%20Cycle%20by%20Category%20in%20the%20last%2013%20cycles]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147425.473995000
+
+[savedsearches/in%20%5Bcategory%5D%20in%20%5BinOut%5D%20in%20%5Bcycle%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147429.468247000
+
+[savedsearches/Spending%20in%20%5Bcategory%5D%20in%20%5Bcycle%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147434.147610000
+
+[savedsearches/Spending%20by%20Cycle%20in%20the%20last%2013%20cycles]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147438.916759000
+
+[savedsearches/Spending%20by%20Category%20in%20%5Bcycle%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147442.934198000
+
+[savedsearches/OUT%20in%20%5Bcategory%5D%20in%20%5Byear%5D%20by%20Cycle]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147446.721673000
+
+[savedsearches/OUT%20in%20%5Bcategory%5D%20in%20%5Byear%5D%20Total]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147450.584771000
+
+[savedsearches/Cashflow%20in%20%5BinOut%5D%20in%20%5Bcycle%5D%20by%20Category]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147455.648473000
+
+[savedsearches/Cashflow%20in%20%5Bcategory%5D%20in%20%5BinOut%5D%20in%20%5Bcycle%5D]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147459.016194000
+
+[savedsearches/Cashflow%20by%20Cycle%20by%20InOut%20in%20the%20last%2013%20cycles]
+export = none
+owner = admin
+version = 8.0.3
+modtime = 1626147462.225278000

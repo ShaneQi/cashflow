@@ -1,6 +1,7 @@
 <form theme="dark">
   <init>
     <eval token="cycle">strftime(now() - 3600 * 24 * 30, "%y%m")</eval>
+    <set token="inOut">OUT</set>
   </init>
   <label>C Dashboard</label>
   <fieldset submitButton="false">
@@ -14,7 +15,7 @@
       <chart>
         <title>Lawn in This Year</title>
         <search>
-          <query>| savedsearch "OUT by Cycle per [category] IN [year]" category="Lawn" year="$year$" | eval budget=200</query>
+          <query>| savedsearch "OUT in [category] in [year] by Cycle" category="Lawn" year="$year$" | eval budget=200</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -60,7 +61,7 @@
       <chart>
         <title>Electronics in This Year</title>
         <search>
-          <query>| savedsearch "OUT by Cycle per [category] IN [year]" category="Electronics" year="$year$" | eval budget=300</query>
+          <query>| savedsearch "OUT in [category] in [year] by Cycle" category="Electronics" year="$year$" | eval budget=300</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -106,7 +107,7 @@
       <chart>
         <title>Home in This Year</title>
         <search>
-          <query>| savedsearch "OUT by Cycle per [category] IN [year]" category="Home" year="$year$" | eval budget=200</query>
+          <query>| savedsearch "OUT in [category] in [year] by Cycle" category="Home" year="$year$" | eval budget=200</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -152,7 +153,7 @@
       <chart>
         <title>Shopping in This Year</title>
         <search>
-          <query>| savedsearch "OUT by Cycle per [category] IN [year]" category="Shopping" year="$year$" | eval budget=200</query>
+          <query>| savedsearch "OUT in [category] in [year] by Cycle" category="Shopping" year="$year$" | eval budget=200</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -198,7 +199,7 @@
       <chart>
         <title>Investment in This Year</title>
         <search>
-          <query>| savedsearch "OUT by Cycle per [category] IN [year]" category="Investment" year="$year$" | eval budget=1000</query>
+          <query>| savedsearch "OUT in [category] in [year] by Cycle" category="Investment" year="$year$" | eval budget=1000</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -302,7 +303,7 @@
       <chart>
         <title>Investment in This Year</title>
         <search>
-          <query>| savedsearch "OUT Total per [category] IN [year]" category="Investment" year="$year$"</query>
+          <query>| savedsearch "OUT in [category] in [year] Total" category="Investment" year="$year$"</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -315,9 +316,9 @@
   <row>
     <panel>
       <table>
-        <title>OUT Transactions of $cycle$ $category$</title>
+        <title>OUT in $category$ in $inOut$ in $cycle$</title>
         <search>
-          <query>| savedsearch "IN &amp; OUT Transactions per [cycle] per [category] per [inOut]" inOut="OUT" cycle=$cycle$ category="$category$"</query>
+          <query>| savedsearch "in [category] in [inOut] in [cycle]" inOut="$inOut$" cycle=$cycle$ category="$category$"</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>

@@ -1,0 +1,114 @@
+<dashboard theme="dark">
+  <init>
+    <eval token="cycle">strftime(now() - 3600 * 24 * 30, "%y%m")</eval>
+    <set token="inOut">ALL</set>
+    <set token="category">ALL</set>
+  </init>
+  <label>D Dashboard</label>
+  <row>
+    <panel>
+      <chart>
+        <title>Cashflow by Cycle by InOut in the last 13 cycles</title>
+        <search ref="Cashflow by Cycle by InOut in the last 13 cycles"></search>
+        <option name="charting.drilldown">all</option>
+        <drilldown>
+          <set token="cycle">$click.value$</set>
+          <set token="inOut">ALL</set>
+          <set token="category">ALL</set>
+        </drilldown>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Cashflow in OUT in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Cashflow in [inOut] in [cycle] by Category" cycle=$cycle$ inOut="OUT"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.axisTitleY.visibility">collapsed</option>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="height">600</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+          <set token="inOut">OUT</set>
+        </drilldown>
+      </chart>
+    </panel>
+    <panel>
+      <table>
+        <title>Cashflow in OUT in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Cashflow in [inOut] in [cycle] by Category" cycle=$cycle$ inOut="OUT"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="drilldown">row</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+          <set token="inOut">OUT</set>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <chart>
+        <title>Cashflow in IN in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Cashflow in [inOut] in [cycle] by Category" cycle=$cycle$ inOut="IN"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.axisTitleY.visibility">collapsed</option>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="height">600</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+          <set token="inOut">IN</set>
+        </drilldown>
+      </chart>
+    </panel>
+    <panel>
+      <table>
+        <title>Cashflow in IN in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Cashflow in [inOut] in [cycle] by Category" cycle=$cycle$ inOut="IN"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="drilldown">row</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+          <set token="inOut">IN</set>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Cashflow in $category$ in $inOut$ in $cycle$</title>
+        <search>
+          <query>| savedsearch "Cashflow in [category] in [inOut] in [cycle]" cycle=$cycle$ category="$category$" inOut="$inOut$"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">true</option>
+        <option name="totalsRow">true</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
