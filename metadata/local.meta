@@ -21,26 +21,6 @@ owner = admin
 version = 8.0.3
 modtime = 1587400738.675202000
 
-[savedsearches/OUT%20by%20Category]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1587401372.929310000
-
-[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D]
-access = read : [ * ], write : [ * ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1606377864.864223000
-
-[savedsearches/IN%20%26%20OUT%20by%20Cycle]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1625919984.706264000
-
 [app/install/install_source_checksum]
 version = 8.0.3
 modtime = 1623647097.531970000
@@ -49,50 +29,6 @@ modtime = 1623647097.531970000
 owner = admin
 version = 8.0.3
 modtime = 1626147259.737728000
-
-[savedsearches/OUT%20Inevitable%20by%20Cycle]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1625920199.932854000
-
-[savedsearches/IN%20%26%20OUT%20Transactions%20per%20%5Bcycle%5D%20per%20%5Bcategory%5D%20per%20%5BinOut%5D]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1588793395.966702000
-
-[savedsearches/by%20Category%20per%20%5Bcycle%5D%20per%20%5BinOut%5D]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1588794457.883297000
-
-[savedsearches/OUT%20by%20Category%20IN%20Last%2012%20Cycles]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1606369403.988126000
-
-[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D%20IN%20Last%2012%20Cycles]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1606369714.994753000
-
-[savedsearches/OUT%20Total%20per%20%5Bcategory%5D%20IN%20%5Byear%5D]
-access = read : [ * ], write : [ admin, power ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1610226503.495321000
-
-[savedsearches/OUT%20by%20Cycle%20per%20%5Bcategory%5D%20IN%20%5Byear%5D]
-access = read : [ * ], write : [ admin, power ]
-export = none
-owner = admin
-version = 8.0.3
-modtime = 1610226520.365715000
 
 [indexes/cashflow]
 owner = admin
