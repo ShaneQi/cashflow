@@ -3,12 +3,12 @@
     <eval token="cycle">strftime(now() - 3600 * 24 * 30, "%y%m")</eval>
     <set token="category">ALL</set>
   </init>
-  <label>A Dashboard</label>
+  <label>E Dashboard</label>
   <row>
     <panel>
       <chart>
-        <title>Spending by Cycle in the last 13 cycles</title>
-        <search ref="Spending by Cycle in the last 13 cycles"></search>
+        <title>Flex Spending by Cycle in the last 13 cycles</title>
+        <search ref="Flex Spending by Cycle in the last 13 cycles"></search>
         <option name="charting.drilldown">all</option>
         <drilldown>
           <set token="cycle">$click.value$</set>
@@ -20,9 +20,9 @@
   <row>
     <panel>
       <chart>
-        <title>Spending in $cycle$ by Category</title>
+        <title>Flex Spending in $cycle$ by Category</title>
         <search>
-          <query>| savedsearch "Spending in [cycle] by Category" cycle=$cycle$</query>
+          <query>| savedsearch "Flex Spending in [cycle] by Category" cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -39,9 +39,9 @@
     </panel>
     <panel>
       <table>
-        <title>Spending in $cycle$ by Category</title>
+        <title>Flex Spending in $cycle$ by Category</title>
         <search>
-          <query>| savedsearch "Spending in [cycle] by Category" cycle=$cycle$</query>
+          <query>| savedsearch "Flex Spending in [cycle] by Category" cycle=$cycle$</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -56,9 +56,9 @@
   <row>
     <panel>
       <table>
-        <title>Spending in $category$ in $cycle$</title>
+        <title>Flex Spending in $category$ in $cycle$</title>
         <search>
-          <query>| savedsearch "Spending in [category] in [cycle]" cycle=$cycle$ category="$category$"</query>
+          <query>| savedsearch "Flex Spending in [category] in [cycle]" cycle=$cycle$ category="$category$"</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
