@@ -3,7 +3,7 @@
     <eval token="cycle">strftime(now() - 3600 * 24 * 30, "%y%m")</eval>
     <set token="inOut">OUT</set>
   </init>
-  <label>D Dashboard</label>
+  <label>Budget</label>
   <fieldset submitButton="false">
     <input type="text" token="year" searchWhenChanged="true">
       <label>Year</label>

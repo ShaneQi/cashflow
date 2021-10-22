@@ -4,7 +4,7 @@
     <set token="inOut">ALL</set>
     <set token="category">ALL</set>
   </init>
-  <label>B Dashboard</label>
+  <label>Cashflow</label>
   <row>
     <panel>
       <chart>

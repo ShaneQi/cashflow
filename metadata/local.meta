@@ -6,12 +6,12 @@ modtime = 1587400090.161142000
 version = 8.0.3
 modtime = 1587400090.161957000
 
-[views/a_dashboard]
+[views/spending]
 owner = admin
 version = 8.0.3
 modtime = 1628739251.483072000
 
-[views/b_dashboard]
+[views/cashflow]
 owner = admin
 version = 8.0.3
 modtime = 1626146504.946535000
@@ -25,7 +25,7 @@ modtime = 1587400738.675202000
 version = 8.0.3
 modtime = 1626752884.608792000
 
-[views/c_dashboard]
+[views/col]
 owner = admin
 version = 8.0.3
 modtime = 1626147259.737728000
@@ -35,7 +35,7 @@ owner = admin
 version = 8.0.3
 modtime = 1622620649.685895000
 
-[views/d_dashboard]
+[views/budget]
 owner = admin
 version = 8.0.3
 modtime = 1626144611.671677000
@@ -107,7 +107,7 @@ owner = admin
 version = 8.0.3
 modtime = 1628738819.722460000
 
-[views/e_dashboard]
+[views/flex]
 owner = admin
 version = 8.0.3
 modtime = 1628740875.460889000
