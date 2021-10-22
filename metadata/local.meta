@@ -25,11 +25,6 @@ modtime = 1587400738.675202000
 version = 8.0.3
 modtime = 1626752884.608792000
 
-[views/col]
-owner = admin
-version = 8.0.3
-modtime = 1626147259.737728000
-
 [indexes/cashflow-1.1]
 owner = admin
 version = 8.0.3
