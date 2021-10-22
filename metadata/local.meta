@@ -30,7 +30,7 @@ owner = admin
 version = 8.0.3
 modtime = 1626147259.737728000
 
-[indexes/cashflow]
+[indexes/cashflow-1.1]
 owner = admin
 version = 8.0.3
 modtime = 1622620649.685895000
