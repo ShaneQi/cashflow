@@ -9,8 +9,11 @@
       <chart>
         <title>Spending by Cycle in the last 13 cycles</title>
         <search ref="Spending by Cycle in the last 13 cycles"></search>
+        <option name="charting.chart.stackMode">stacked</option>
         <option name="charting.drilldown">all</option>
-        <option name="charting.legend.placement">none</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisEnd</option>
+        <option name="charting.legend.mode">standard</option>
+        <option name="charting.legend.placement">bottom</option>
         <drilldown>
           <set token="cycle">$click.value$</set>
           <set token="category">ALL</set>
@@ -23,17 +26,21 @@
       <chart>
         <title>COL by Cycle by Category in the last 13 cycles</title>
         <search ref="COL by Cycle by Category in the last 13 cycles"></search>
-        <option name="charting.drilldown">none</option>
+        <option name="charting.drilldown">all</option>
         <option name="charting.legend.placement">bottom</option>
+        <drilldown>
+          <set token="cycle">$click.value$</set>
+          <set token="category">ALL</set>
+        </drilldown>
       </chart>
     </panel>
   </row>
   <row>
     <panel>
       <chart>
-        <title>Spending in $cycle$ by Category</title>
+        <title>Flex Spending in $cycle$ by Category</title>
         <search>
-          <query>| savedsearch "Spending in [cycle] by Category" cycle=$cycle$</query>
+          <query>| savedsearch "Spending in [cycle] in [flex] by Category" cycle=$cycle$ flex="TRUE"</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -42,7 +49,6 @@
         <option name="charting.chart">bar</option>
         <option name="charting.drilldown">all</option>
         <option name="charting.legend.placement">none</option>
-        <option name="height">600</option>
         <drilldown>
           <set token="category">$click.value$</set>
         </drilldown>
@@ -50,9 +56,44 @@
     </panel>
     <panel>
       <table>
-        <title>Spending in $cycle$ by Category</title>
+        <title>Flex Spending in $cycle$ by Category</title>
         <search>
-          <query>| savedsearch "Spending in [cycle] by Category" cycle=$cycle$</query>
+          <query>| savedsearch "Spending in [cycle] in [flex] by Category" cycle=$cycle$ flex="TRUE"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="drilldown">row</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>None-Flex Spending in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Spending in [cycle] in [flex] by Category" cycle=$cycle$ flex="FALSE"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.axisTitleY.visibility">collapsed</option>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.legend.placement">none</option>
+        <drilldown>
+          <set token="category">$click.value$</set>
+        </drilldown>
+      </chart>
+    </panel>
+    <panel>
+      <table>
+        <title>None-Flex Spending in $cycle$ by Category</title>
+        <search>
+          <query>| savedsearch "Spending in [cycle] in [flex] by Category" cycle=$cycle$ flex="FALSE"</query>
           <earliest>0</earliest>
           <sampleRatio>1</sampleRatio>
         </search>
