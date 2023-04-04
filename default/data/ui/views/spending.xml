@@ -7,8 +7,8 @@
   <row>
     <panel>
       <chart>
-        <title>Spending by Cycle in the last 13 cycles</title>
-        <search ref="Spending by Cycle in the last 13 cycles"></search>
+        <title>Spending by Cycle by Flex in the last 13 cycles</title>
+        <search ref="Spending by Cycle by Flex in the last 13 cycles"></search>
         <option name="charting.chart.stackMode">stacked</option>
         <option name="charting.drilldown">all</option>
         <option name="charting.legend.labelStyle.overflowMode">ellipsisEnd</option>
