@@ -10,6 +10,8 @@
       <chart>
         <title>Cashflow by Cycle by InOut in the last 13 cycles</title>
         <search ref="Cashflow by Cycle by InOut in the last 13 cycles"></search>
+        <option name="charting.axisY.maximumNumber">25000</option>
+        <option name="charting.axisY.minimumNumber">10000</option>
         <option name="charting.drilldown">all</option>
         <drilldown>
           <set token="cycle">$click.value$</set>

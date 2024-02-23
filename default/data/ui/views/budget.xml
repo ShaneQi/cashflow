@@ -7,7 +7,7 @@
   <fieldset submitButton="false">
     <input type="text" token="year" searchWhenChanged="true">
       <label>Year</label>
-      <default>21</default>
+      <default>24</default>
     </input>
   </fieldset>
   <row>
